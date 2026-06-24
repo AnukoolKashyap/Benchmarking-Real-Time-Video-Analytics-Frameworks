@@ -6,3 +6,4 @@ models/*.onnx
 models/*.pt
 __pycache__/
 *.pyc
+RTSP urls.txt
