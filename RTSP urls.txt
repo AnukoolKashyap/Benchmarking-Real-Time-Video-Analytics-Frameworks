@@ -1,0 +1,10 @@
+rtsp://admin:Admin%231234@192.168.100.164:554/video/live?channel=1&subtype=0
+correct url removed onVif from it
+
+
+python scripts/test_camera.py --url "rtsp://admin:Admin%231234@192.168.100.164:554/video/live?channel=1&subtype=0" --mode gpu
+gpu url
+2nd camera
+rtsp://admin:admin%23123@192.168.100.165:554/cam/realmonitor?channel=1&subtype=0
+
+python scripts/test_camera.py --url "rtsp://admin:admin%23123@192.168.100.165:554/cam/realmonitor?channel=1&subtype=0" --mode gpu

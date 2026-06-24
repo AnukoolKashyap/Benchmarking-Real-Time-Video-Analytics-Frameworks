@@ -1,0 +1,8 @@
+.env
+captured_faces/
+logs/
+models/*.engine
+models/*.onnx
+models/*.pt
+__pycache__/
+*.pyc

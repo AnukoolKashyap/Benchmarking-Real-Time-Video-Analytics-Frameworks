@@ -1,0 +1,35 @@
+# ── Core ─────────────────────────────────────────────────────────────────────
+ultralytics>=8.0.0          # YOLOv8 — model loading + ONNX export
+opencv-python>=4.8.0        # frame processing, drawing, NMS
+numpy>=1.24.0
+
+# ── FFmpeg Python bindings (libav wrapper) ────────────────────────────────────
+# PyAV wraps FFmpeg's libav libraries — this is what gives us GPU decode
+# pip install av
+av>=12.0.0
+
+# ── TensorRT ─────────────────────────────────────────────────────────────────
+# Install with NVIDIA's index for CUDA 12.x:
+#   pip install tensorrt-cu12 --extra-index-url https://pypi.nvidia.com --trusted-host pypi.nvidia.com
+# tensorrt-cu12==11.1.0.106
+
+# ── PyCUDA ───────────────────────────────────────────────────────────────────
+# Required for TensorRT GPU memory management
+#   pip install pycuda
+# pycuda>=2022.1
+
+# ── PyTorch (for CUDA check + fallback) ───────────────────────────────────────
+# Install from https://pytorch.org — pick your CUDA version
+# torch>=2.0.0
+
+# ── Utilities ────────────────────────────────────────────────────────────────
+Pillow>=10.0.0
+tqdm>=4.65.0
+
+
+# ── Install order (run these in this order) ───────────────────────────────────
+# 1. pip install torch --index-url https://download.pytorch.org/whl/cu121
+# 2. pip install av
+# 3. pip install tensorrt-cu12 --extra-index-url https://pypi.nvidia.com --trusted-host pypi.nvidia.com
+# 4. pip install pycuda
+# 5. pip install ultralytics opencv-python numpy Pillow tqdm
