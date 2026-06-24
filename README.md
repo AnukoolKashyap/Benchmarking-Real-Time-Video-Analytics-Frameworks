@@ -244,7 +244,7 @@ pip install tensorrt-cu12 --extra-index-url https://pypi.nvidia.com --trusted-ho
 ## Environment
 
 ```
-OS         : Windows 10
+OS         : Windows 11
 Python     : 3.10.11
 CUDA       : 12.1
 TensorRT   : 11.1.0.106
